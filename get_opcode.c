@@ -23,11 +23,12 @@ void (*get_opcode(char *opcode))(stack_t **, unsigned int)
 		{"mod", mod},
 		{"pchar", pchar},
 		{"pstr", pstr},
+		{"rotl", rotl},
 		{NULL, NULL}
 	};
 	int i = 0;
 
-	for (i = 0; i < 13; i++)
+	for (i = 0; i < 14; i++)
 	{
 		if (strcmp(opcode, opcodes[i].opcode) == 0)
 			return (opcodes[i].f);
