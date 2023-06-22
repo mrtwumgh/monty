@@ -17,11 +17,12 @@ void (*get_opcode(char *opcode))(stack_t **, unsigned int)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
 		{NULL, NULL}
 	};
 	int i = 0;
 
-	for (i = 0; i < 7; i++)
+	for (i = 0; i < 8; i++)
 	{
 		if (strcmp(opcode, opcodes[i].opcode) == 0)
 			return (opcodes[i].f);
