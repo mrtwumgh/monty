@@ -50,6 +50,7 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
+void my_div(stack_t **stack, unsigned int line_number);
 void file_parser(FILE *file);
 
 #endif /* _MONTY_H */
