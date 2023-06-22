@@ -19,11 +19,12 @@ void (*get_opcode(char *opcode))(stack_t **, unsigned int)
 		{"nop", nop},
 		{"sub", sub},
 		{"div", my_div},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 	int i = 0;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 10; i++)
 	{
 		if (strcmp(opcode, opcodes[i].opcode) == 0)
 			return (opcodes[i].f);
